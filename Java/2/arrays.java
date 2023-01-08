@@ -69,8 +69,8 @@ public class arrays {
         System.out.println("");
         // multidimensional array
         int[][] multidimArray = {{1, 2, 3, 4}, {5, 6, 7, 8}};
-        // for example, if we call multidimArray[1][1], it will access the 2nd element of the 
-        // first array, which is {5, 6, 7, 8}, and the 2nd element of the second array, which is 6.
-        System.out.println(multidimArray[1][1]);
+        // for example, if we call multidimArray[0][1], it will access the 1st element of the 
+        // first array, which is {1, 2, 3, 4}, and the 2nd element of the second array, which is 2.
+        System.out.println(multidimArray[0][1]);
     }
 }
