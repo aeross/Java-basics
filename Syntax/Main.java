@@ -83,6 +83,12 @@ name of the .java file in order for the file to be successfully compiled.
     // multiple variable declarations in a line
     int a = 1, b = 2;
 
+    // strings
+    String str = "Banana";
+    System.out.println(str);
+    // There are many methods that can be done to str. Here's a couple examples.
+    System.out.println(str.toUpperCase());
+    System.out.println(str.length());
 
     // If statements
     System.out.println("");
