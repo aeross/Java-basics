@@ -27,9 +27,14 @@ public class ClassesIntro {
 }
 
 class SoccerPlayer {
-    int shooting;
-    int dribbling;
-    int passing;
+    int shooting;   // from 1 to 99, with 1 being the worst and 99 being the best
+    int dribbling;  // same, from 1 to 99
+    int passing;    // also from 1 to 99
     double salary;
     long transfer_fee;
+
+    public double overall() {
+        // the overall ability of a player
+        return (shooting + dribbling + passing) / (double)3;
+    }
 }
