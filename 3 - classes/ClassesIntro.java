@@ -23,6 +23,10 @@ public class ClassesIntro {
         neymar.transfer_fee = 222_000_000L;
         System.out.println(neymar.transfer_fee);
 
+        // declaring the values of a class's attributes is essential,
+        // but notice how much space and effort this takes!
+        // the solution: "Constructors"
+        // visit Constructors.java for more explanation
     }
 }
 
@@ -33,6 +37,7 @@ class SoccerPlayer {
     double salary;
     long transfer_fee;
 
+    // this is a method, Visit ClassMethods.java for more details
     public double overall() {
         // the overall ability of a player
         return (shooting + dribbling + passing) / (double)3;
