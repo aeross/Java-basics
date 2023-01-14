@@ -20,12 +20,11 @@ class MotoBike3 {
         this.top_speed = top_speed;
     }
 
-    // we can access the private variables in this class
+    // it's good practice to use "this" for clarity and less confusion
     int get_cc() {
         return this.cc;
     }
     void set_cc(int cc) {
         this.cc = cc;
     }
-    // these methods are called *getters* and *setters*
 }
