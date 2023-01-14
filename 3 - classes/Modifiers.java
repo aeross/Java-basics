@@ -6,11 +6,9 @@ public class Modifiers {
         those are called *modifiers*.
 
         there are various types of modifiers, they are: public, private, and static.
-        there are also other modifiers such as final or abstract, but they are
-        directly related to more advanced OOP concepts such as inheritance and abstraction.
-        
-        since we're only sticking to the basics in this example,
-        we'll only discuss a few common ones.
+        there are also other modifiers such as final or abstract, but
+        we're only sticking to the basics in this example,
+        so we'll only discuss a few common ones.
         */
         
         // VARIABLES
@@ -30,7 +28,8 @@ public class Modifiers {
         //RC211V.cc = 990;         // will throw an error
         // we can only access them by calling a method from the class whose private
         // variable belongs to if such method exists
-        System.out.println(RC211V.set_cc(990));
+        RC211V.set_cc(990);
+        System.out.println(RC211V.get_cc());
 
         // the static variable
         MotoBike3.tyres = 2;   
@@ -61,8 +60,11 @@ class MotoBike3 {
     }
 
     // we can access the private variables in this class
-    int set_cc(int c) {
-        cc = c;
+    int get_cc() {
         return cc;
     }
+    void set_cc(int c) {
+        cc = c;
+    }
+    // these methods are called *getters* and *setters*
 }
