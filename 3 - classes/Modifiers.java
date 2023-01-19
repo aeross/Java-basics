@@ -48,6 +48,8 @@ public class Modifiers {
 class MotoBike3 {
     public double fuel_capacity; // public means this is accessible for all classes
     double weight;     // no modifier means Java will set this to public by default
+    // note: default modifiers must be within the same folder, it cannot be accessed from a
+    // different directory, unlike public
     private int cc;    // private means this is accessible for this class only
     int top_speed;        
     static int tyres;  // static means the value of this variable becomes global to all objects of this class
