@@ -6,7 +6,7 @@ Inheritance and polymorphism are useful because they allow attributes and
 methods to be reused from other classes.
 **/
 
-// superclass
+// subclass
 class Person {
     String name;
     int age;
@@ -14,16 +14,16 @@ class Person {
     double height;
 }
 
-// subclass
+// superclass
 class Male extends Person {
     int pSize;   // an attribute that are specific to the Male class (subclass)
 }
 
 public class Inheritance {
     public static void main(String[] args) {
-        Male eric = new Male();
-        eric.name = "Eric";  // attribute from superclass
-        eric.pSize = 6;      // attribute from subclass
+        Male eric = new Male();  // only need to create an object from the superclass
+        eric.name = "Eric";      // attribute from superclass
+        eric.pSize = 6;          // attribute from subclass
         System.out.println(eric.name + "'s pSize is " + eric.pSize + " in.");
     }
 }
