@@ -1,4 +1,4 @@
-class Encapsulation {
+public class Encapsulation {
     public static void main(String[] args) {
         Animal cat = new Animal();
         /*
@@ -18,7 +18,7 @@ The way to achieve this is to set variables as private and
 provide getters and setters to access those variables.
 */
 
-public class Animal {
+class Animal {
     private String name;
 
     public String getName() {
