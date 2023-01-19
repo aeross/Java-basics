@@ -1,15 +1,3 @@
-public class Encapsulation {
-    public static void main(String[] args) {
-        Animal cat = new Animal();
-        /*
-        cat.name = "Creme Puff";       // error
-        System.out.println(cat.name);  // error
-        */
-        cat.setName("Creme Puff");
-        System.out.println(cat.getName());
-    }
-}
-
 /*
 Encapsulation is a standard practice of object oriented programming that
 hides variables from other classes to make sure such data is hidden from users.
@@ -27,5 +15,17 @@ class Animal {
 
     public void setName(String newName) {
         this.name = newName;
+    }
+}
+
+public class Encapsulation {
+    public static void main(String[] args) {
+        Animal cat = new Animal();
+        /*
+        cat.name = "Creme Puff";       // error
+        System.out.println(cat.name);  // error
+        */
+        cat.setName("Creme Puff");
+        System.out.println(cat.getName());
     }
 }
